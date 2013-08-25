@@ -1,4 +1,2 @@
 composer.lock
-.buildpath
-.project
-.settings
+.idea
