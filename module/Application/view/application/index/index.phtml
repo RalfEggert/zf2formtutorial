@@ -1,0 +1,31 @@
+<?php 
+/**
+ * Zend Framework 2 Beispiel
+ * 
+ * @package    Application
+ * @author     Ralf Eggert <r.eggert@travello.de>
+ * @copyright  Ralf Eggert <r.eggert@travello.de>
+ * @link       http://www.zendframeworkbuch.de/
+ */
+
+/**
+ * namespace definition and usage
+ */
+use Zend\Debug\Debug;
+use Customer\Entity\CustomerEntity;
+
+/**
+ * Index view script
+ * 
+ * @package    Application
+ */
+
+$this->pageTitle('Beispiel für Zend\Form mit diversen Service-Managern');
+
+?>
+<div class="hero-unit">
+<h1>ZF2 Beispiel</h1>
+<p>Zeigt den Einsatz von Zend\Form mit den diversen Service-Managern!</p>
+<p><a href="<?php echo $this->url('customer');?>" class="btn btn-primary">zum Beispiel</a></p>
+</div>
+

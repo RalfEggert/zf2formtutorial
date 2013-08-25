@@ -1,0 +1,53 @@
+<?php 
+/**
+ * Zend Framework 2 Beispiel
+ * 
+ * @package    Customer
+ * @author     Ralf Eggert <r.eggert@travello.de>
+ * @copyright  Ralf Eggert <r.eggert@travello.de>
+ * @link       http://www.zendframeworkbuch.de/
+ */
+
+/**
+ * namespace definition and usage
+ */
+use Customer\Entity\CustomerEntity;
+
+/**
+ * Index view script
+ * 
+ * @package    Customer
+ */
+
+$customerEntity = $this->customerEntity; /* @var $customerEntity CustomerEntity */
+
+$this->headTitle('Kunde');
+$this->pageTitle('Kunde &raquo; ' . $customerEntity->getFirstname() . ' ' . $customerEntity->getLastname());
+
+?>
+<table class="table table-striped table-bordered table-hover">
+<tbody>
+<tr>
+<th>ID</th>
+<td><?php echo $customerEntity->getId(); ?></td>
+</tr>
+<tr>
+<th>Vorname</th>
+<td><?php echo $customerEntity->getFirstname(); ?></td>
+</tr>
+<tr>
+<th>Nachname</th>
+<td><?php echo $customerEntity->getLastname(); ?></td>
+</tr>
+<tr>
+<th>Anschrift</th>
+<td><?php echo $this->customerAddress($customerEntity); ?></td>
+</tr>
+<tr>
+<th>Land</th>
+<td><?php echo $customerEntity->optionCountry(); ?></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<a href="<?php echo $this->url('customer'); ?>" class="btn btn-success">Kundenliste</a>

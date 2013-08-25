@@ -1,0 +1,33 @@
+<?php
+/**
+ * Zend Framework 2 Beispiel
+ *
+ * @package    Customer
+ * @author     Ralf Eggert <r.eggert@travello.de>
+ * @copyright  Ralf Eggert <r.eggert@travello.de>
+ * @link       http://www.zendframeworkbuch.de/
+ */
+
+/**
+ * namespace definition and usage
+ */
+use Customer\Form\CustomerForm;
+
+/**
+ * Create view script
+ *
+ * @package    Customer
+ */
+
+$this->headTitle('Kunde anlegen');
+$this->pageTitle('Kunde anlegen');
+$this->headStyle()->appendStyle('label { width: 200px; }');
+
+$form = $this->form; /* @var $form CustomerForm */
+$form->prepare();
+$form->setAttribute('action', $this->url('customer/action', array(), true));
+
+echo $this->form($form);
+?>
+<hr />
+<a href="<?php echo $this->url('customer'); ?>" class="btn btn-success">Kundenliste</a>

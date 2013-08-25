@@ -1,0 +1,39 @@
+<?php
+/**
+ * Zend Framework 2 Beispiel
+ * 
+ * @package    Application
+ * @author     Ralf Eggert <r.eggert@travello.de>
+ * @copyright  Ralf Eggert <r.eggert@travello.de>
+ * @link       http://www.zendframeworkbuch.de/
+ */
+
+/**
+ * Header view script
+ * 
+ * @package    Application
+ */
+
+?>
+<div class="top_line"></div>
+<br />
+<header>
+<div class="container">
+<div class="navbar">
+<div class="navbar-inner">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<div class="nav-collapse collapse">
+<ul class="nav">
+<li><a href="<?php echo $this->url('home'); ?>">Intro</a></li>
+<li><a href="<?php echo $this->url('customer'); ?>">Beispiel</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
