@@ -30,7 +30,8 @@ class CustomerTable extends TableGateway
     /**
      * Constructor
      *
-     * @param Adapter $adapter database adapter
+     * @param Adapter                               $adapter database adapter
+     * @param \Zend\Db\ResultSet\ResultSetInterface $resultSet
      */
     public function __construct(Adapter $adapter, ResultSetInterface $resultSet)
     {

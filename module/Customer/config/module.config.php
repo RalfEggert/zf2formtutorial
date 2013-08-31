@@ -70,6 +70,12 @@ return array(
         ),
     ),
 
+    'hydrators'         => array(
+        'invokables' => array(
+            'Customer\DbHydrator' => 'Customer\Hydrator\CustomerDbHydrator',
+        ),
+    ),
+
     'filters'         => array(
         'invokables' => array(
             'Customer\Postcode' => 'Customer\Filter\Postcode',

@@ -1,4 +1,5 @@
-zf2formtutorial
-===============
+ZF2 Service-Manager Tutorial für Formulare und InputFilter
+==========================================================
 
-Tutorial für den Einsatz von Zend\Form mit diversen Service-Managern
+Dateien für ein kleines Tutorial für den Einsatz von Zend\Form mit diversen Service-Managern für
+Filter, Validierer, Input-Filter, Formular-Elemente und Hydratoren.
