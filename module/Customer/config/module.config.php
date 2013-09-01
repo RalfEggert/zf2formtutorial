@@ -110,7 +110,7 @@ return array(
             'Customer\CustomerAddressFieldset' => 'Customer\Form\CustomerAddressFieldset',
         ),
         'factories'  => array(
-            'Customer\CustomerForm' => 'Customer\Form\CustomerFormFactory',
+            'Customer\CustomerForm'            => 'Customer\Form\CustomerFormFactory',
         ),
         'shared'     => array(
             'Customer\CustomerAddressFieldset' => true,

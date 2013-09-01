@@ -29,6 +29,7 @@ class CustomerFormFactory implements FactoryInterface
      * Create Service Factory
      * 
      * @param ServiceLocatorInterface $formElementManager
+     * @return \Customer\Form\CustomerForm|mixed
      */
     public function createService(ServiceLocatorInterface $formElementManager)
     {
